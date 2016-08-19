@@ -5,21 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin15]
 
-* System dependencies
+* System dependencies: I am running on a mac, but just as long as you have ruby (I use RVM - https://rvm.io/) and Ruby on Rails 4.2.6, it should work fine.
 
-* Configuration
+* Configuration: run bundle update and install for gems
 
-* Database creation
+* Database creation: run rake db:reset to reset the dev database, I am in there as a user.
 
-* Database initialization
+* Database initialization: TODO
 
-* How to run the test suite
+* How to run the test suite: TODO
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Deployment instructions: I deployed on heroku, this is just a template so I would add something interesting. Here are some heroku deployment instructions: https://devcenter.heroku.com/articles/getting-started-with-rails4
 
 * ...
 
