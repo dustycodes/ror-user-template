@@ -5,16 +5,25 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version: ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin15]
+* Ruby version: ruby 2.3.6
 
-* System dependencies: I am running on a mac, but just as long as you have ruby (I use RVM - https://rvm.io/) and Ruby on Rails 4.2.6, it should work fine.
+* System dependencies: I am using rbenv to install 2.3.6. Change into the project root and run bundle install
 
-* Configuration: run bundle update and install for gems
-
-* Database creation: run rake db:reset to reset the dev database, I am in there as a user.
-
-* Database initialization: TODO
-
+* Configuration:
+ 1. run bundle update and install for gems
+ ``` ruby
+ cd ror-user-template
+ bundle install
+ ```
+ 2. Create the secrets
+ ``` ruby
+ bash generate_secrets.sh
+ ```
+ 3. Setup db
+ ``` ruby
+ bin/rake db:create
+ bin/rake db:migrate
+ ```
 * How to run the test suite: TODO
 
 * Services (job queues, cache servers, search engines, etc.)
